@@ -1,6 +1,7 @@
 import { Trigger } from "deno-slack-sdk/types.ts";
 import { TriggerContextData, TriggerTypes } from "deno-slack-api/mod.ts";
 import CreateNewIssueWorkflow from "../workflows/create_new_issue.ts";
+import * as denoSlackHub from "https://deno.land/x/deno_slack_hub@0.0.4/mod.ts";
 
 /**
  * Triggers determine when workflows are executed. A trigger file describes a
